@@ -48,11 +48,13 @@ test_case_2 = [["5", ".", "3", "*", "2", "equals"],
                ["1", ".", "4", "+", "7", "equals"],
                ["9", ".", "3", "-", "2", "equals"],
                ["5", ".", "3", "/", "2", "equals"],
-               ["5", "3","1","2","3","1","9", "*", "2", "equals"],
+               ["5", "3", "1", "2", "3", "1", "9", "*", "2", "equals"],
+               ["equals"]
                # error case
                ]
 # ta có 1 list kết quả mong muốn 2
-expected_result_2 = {"10.6", "8.4", "7.3", "2.65", "10.6"}
+expected_result_2 = {"10.6", "8.4", "7.3", "2.65",
+                     "10624638", "Please enter a valid expression"}
 # duyệt qua từng phần tử trong list test case 2
 actual_result_2 = []
 for i in test_case_2:
